@@ -1,0 +1,24 @@
+for(let j=30; j<=360; j+=30){
+for(let i=0; i<Y.length; i++){
+
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(startX-i*3, startY+i*29);
+    ctx.bezierCurveTo(startX + 50, startY - 80, startX + 100, startY + 150, startX + 400, j);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = '#001f3f'; // gris
+    ctx.stroke();
+  }}
+startX = 380;
+startY = 450;
+for(let i=0; i<Y.length; i++){
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(startX-i*19, startY+i*2);
+    ctx.bezierCurveTo(startX-i*50, startY - 80*i, startX + 100, startY + 150, startX + 50, startY);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = '#A9A9A9'; // gris
+    ctx.stroke();
+  }
