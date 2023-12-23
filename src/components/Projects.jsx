@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <section className="block py-20 mx-6 sm:mx-20 xl:mx-28 justify-center items-center ajuste2">
       <div className="">
-        <img src="/projects.gif" alt="" className="mx-auto w-[15%]" />
+        <img src="/public/projects.gif" alt="" className="mx-auto w-[15%]" />
       </div>
 
       <Swiper

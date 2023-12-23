@@ -7,7 +7,7 @@ const Tec = () => {
     bg-black"
     >
       <div className="">
-        <img src="/tecnologies2.gif" alt="" className="" />
+        <img src="s/tecnologies2.gif" alt="" className="" />
       </div>
 
       <div className="grid grid-cols-3 mx-auto gap-4 items-center justify-center">

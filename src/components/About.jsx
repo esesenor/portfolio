@@ -6,7 +6,7 @@ const About = () => {
     >
       <div className="flex flex-col justify-center items-center gap-8">
         <header className="flex flex-col gap-1 w-[450px] justify-center items-center">
-          <img src="/about2.gif" alt="" className="" />
+          <img src="/public/about2.gif" alt="" className="" />
           <p className="text-[#F5F5F5] font-light font-raj w-[340px] border p-6">
             Mi desempeño laboral ha involucrado roles desafiantes desde el
             liderazgo. Como desarrollador web, buscaré aportar una perspectiva

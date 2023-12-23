@@ -5,7 +5,7 @@ const Home = () => {
     bg-gradient-to-tr from-blue-500/10 via-[#F5F5F5]/10 to-[#ff2982]/10"
     >
       <div className="">
-        <img src="/Developer.gif" alt="" className="" />
+        <img src="/public/Developer.gif" alt="" className="" />
       </div>
 
       <div className="">
