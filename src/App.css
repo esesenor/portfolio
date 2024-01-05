@@ -31,16 +31,7 @@
                  1px 1px  5px #F5F5F5;
   }
 
-  .App {
-    background-image: url("/public/bg1.png");
-    background-size: cover; /* O utiliza "contain" si prefieres */
-    background-position: center;
-    background-repeat: no-repeat;
-
-  }
-
   
-
   @media (max-width: 410px) {
     /* Estilos específicos para pantallas más pequeñas */
     .mySwiper {
