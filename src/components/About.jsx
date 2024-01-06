@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section
-      className="block mx-auto bg- w-[380px] rounded-3xl p-6 my-20
+      className="block mx-auto bg- w-[380px] rounded-3xl p-6 my-20 xl:w-[600px]
         bg-gradient-to-tr from-yellow-400/20 via-[#F5F5F5]/10 to-purple-600/10"
     >
       <div className="flex flex-col justify-center items-center gap-8">
