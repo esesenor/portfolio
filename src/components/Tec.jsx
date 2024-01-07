@@ -1,4 +1,4 @@
-import StyleTec from "./layout/styleTec";
+import StyleTec from "./layout/StyleTec";
 
 const Tec = () => {
   return (
