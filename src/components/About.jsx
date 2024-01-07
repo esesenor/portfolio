@@ -10,8 +10,7 @@ const About = () => {
           <p className="text-[#F5F5F5] font-light font-rubik w-[340px] border py-8 p-6 xl:w-[450px]">
             Mi desempeño laboral ha involucrado roles desafiantes desde el
             liderazgo. Como desarrollador web, buscaré aportar una perspectiva
-            única para unir objetivos con soluciones web innovadoras y
-            eficientes.
+            única para unir objetivos con soluciones innovadoras y eficientes.
           </p>
         </header>
 
