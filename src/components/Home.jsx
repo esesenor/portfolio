@@ -30,7 +30,12 @@ const Home = () => {
       </div>
 
       <footer className="mt-20">
-        <img className="" src="/esesr.png" alt="" />
+        <a
+          className="go_store"
+          href="https://api.whatsapp.com/send?phone=573194682210"
+        >
+          <img className="" src="/esesr.png"></img>
+        </a>
         <h1 className=" font-light text-2xl text-[#3b82f6] font-raj">
           {" "}
           ESNEIDER R. B.{" "}

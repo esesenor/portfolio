@@ -6,10 +6,10 @@ const BgCodigo = () => {
   const numStars = 222;
   const stars = [];
 
-  const asciiCharacters = ["*", "S", "+", "Σ", "♡", "♥", "1", "$", "0"];
+  const asciiCharacters = ["Δ", "☠", "+", "Σ", "✌︎︎", "∞", "⚕", "$", "✈"];
 
   for (let i = 0; i < numStars; i++) {
-    const size = getRandomValue(1, 12);
+    const size = getRandomValue(1, 11);
     const character =
       asciiCharacters[Math.floor(getRandomValue(0, asciiCharacters.length))];
     const left = `${getRandomValue(0, 100)}%`;

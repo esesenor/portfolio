@@ -16,6 +16,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #41710f; /* Color del deslizador de la barra de desplazamiento */
+  background-color: rgb(0, 96, 251); /* Color del deslizador de la barra de desplazamiento */
   border-radius: 5px; /* Bordes redondeados para el deslizador */
 }
