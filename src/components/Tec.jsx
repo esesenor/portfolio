@@ -1,4 +1,3 @@
-import { hoverStyle, tecStyle } from "../constants/constants";
 import StyleTec from "./layout/styleTec";
 
 const Tec = () => {

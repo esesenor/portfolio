@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import random from 'canvas-sketch-util/random';
+import React, { useEffect, useRef } from "react";
+import random from "canvas-sketch-util/random";
 
 const Canvas3 = () => {
   const canvasRef = useRef(null);
+  const animationId = useRef(null);
 
   const settings = {
     dimensions: [366, 366],
@@ -11,15 +12,15 @@ const Canvas3 = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext("2d");
 
-    const characters = '$$';
+    const characters = "$$";
     const fontSize = 40;
     const columns = Math.ceil(settings.dimensions[0] / fontSize);
     const rows = Math.ceil(settings.dimensions[1] / fontSize);
     const particles = [];
 
-    // Clase Particle para representar las partículas
+    //Clase que define el objeto que será la partícula
     class Particle {
       constructor(x, y, character) {
         this.x = x;
@@ -69,7 +70,7 @@ const Canvas3 = () => {
 
     // Función para renderizar un fotograma de la animación
     const renderFrame = () => {
-      context.fillStyle = 'black';
+      context.fillStyle = "black";
       context.fillRect(0, 0, settings.dimensions[0], settings.dimensions[1]);
 
       particles.forEach((particle) => {
@@ -78,7 +79,8 @@ const Canvas3 = () => {
 
         if (particle.y > settings.dimensions[1] + fontSize) {
           particle.y = -fontSize;
-          particle.character = characters[random.rangeFloor(0, characters.length)];
+          particle.character =
+            characters[random.rangeFloor(0, characters.length)];
           particle.speed = random.range(0.5, 2);
           particle.angle = random.range(Math.PI * 0.15, Math.PI * 0.75);
           particle.opacity = 1;
@@ -86,20 +88,27 @@ const Canvas3 = () => {
       });
 
       if (settings.animate) {
-        requestAnimationFrame(renderFrame);
+        animationId.current = requestAnimationFrame(renderFrame);
       }
     };
 
     // Iniciar la animación
     renderFrame();
 
-    // Detener la animación después de cierto tiempo (por ejemplo, 5 minutos)
-    setTimeout(() => {
-      settings.animate = false;
-    }, 300000); // 300,000 milisegundos (5 minutos)
+    // Devolver una función de limpieza para detener la animación
+    return () => {
+      cancelAnimationFrame(animationId.current);
+    };
   }, []);
 
-  return <canvas className='abslute mx-auto rounded-full shadow-blue-500 shadow-md transition-all' ref={canvasRef} width={settings.dimensions[0]} height={settings.dimensions[1]} />;
+  return (
+    <canvas
+      className="abslute mx-auto rounded-full shadow-blue-500 shadow-md transition-all"
+      ref={canvasRef}
+      width={settings.dimensions[0]}
+      height={settings.dimensions[1]}
+    />
+  );
 };
 
 export default Canvas3;

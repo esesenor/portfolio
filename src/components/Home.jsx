@@ -10,19 +10,19 @@ const Home = () => {
       </div>
 
       <div className="">
-        <h1 className="font-bold  text-2xl text-[#F5F5F5] segundo-text-shadow p-2">
+        <h1 className="font-bold font-rubik text-2xl text-[#F5F5F5] segundo-text-shadow pt-10">
           Hola!
         </h1>
       </div>
 
       <div className="">
-        <p className="text-[#3b82f6] font-bold p-2 ">
+        <p className="text-[#3b82f6] font-bold font-rubik text-lg py-4">
           Desarrollador web Full-stack
         </p>
       </div>
 
       <div className="">
-        <p className="text-[#F5F5F5] min-w-fit text-xl font-light font-raj w-[240px]">
+        <p className="text-[#F5F5F5] min-w-fit text-xl font-light font-raj w-[240px] font-rubik">
           Enfocado en contribuir con métodos coherentes para lograr el valor
           significativo bajo las circunstancias del momento. Leal, responsable y
           comprometido con la integridad de cada iniciativa.

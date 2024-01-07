@@ -71,7 +71,7 @@ const Projects = () => {
               </header>
               <div className="flex flex-col justify-center items-center gap-1">
                 <div className="">
-                  <h5 className="text-white text-xl font-bold segundo-text-shadow mb-2">
+                  <h5 className="text-white text-xl font-rubik font-bold segundo-text-shadow mb-2">
                     {img.title}
                   </h5>
                   <span className="text-white w-[240px] text-sm">
@@ -80,16 +80,16 @@ const Projects = () => {
                 </div>
                 <div className="flex flex-row justify-center items-center gap-2">
                   <a
-                    className="text-[#001f3f] w-[80px] text-sm font-extrabold p-1 rounded-full text-center
-                     bg-gradient-to-br from-[#3b82f6] via-[#F5F5F5] to-[#DAA520]
+                    className="text-[#001f3f] w-[80px] text-sm font-rubik font-extrabold p-1 rounded-full text-center
+                     bg-gradient-to-br from-[#3b82f6] via-[#F5F5F5] to-[#DAA520] shadow-zinc-400 shadow-md
                      hover:shadow-md hover:shadow-[#DAA520]"
                     href={`${img.pro}`}
                   >
                     Project
                   </a>
                   <a
-                    className="text-[#001f3f] w-[80px] text-sm font-extrabold p-1 rounded-full text-center
-                    bg-gradient-to-br from-[#ff2982] via-[#F5F5F5] to-[#3b82f6]
+                    className="text-[#001f3f] w-[88px] text-sm font-rubik font-extrabold p-1 rounded-full text-center
+                    bg-gradient-to-br from-[#ff2982] via-[#F5F5F5] to-[#3b82f6] shadow-md shadow-zinc-400
                     hover:shadow-md hover:shadow-[#ff2982]"
                     href={`${img.rep}`}
                   >
@@ -101,7 +101,7 @@ const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="text-white font-extrabold text-xl text-center">{`<< slide >>`}</div>
+      <div className="text-white font-extrabold font-rubik text-xl text-center">{`<< slide >>`}</div>
     </section>
   );
 };
