@@ -17,15 +17,17 @@ const Home = () => {
 
       <div className="">
         <p className="text-[#3b82f6] font-bold font-rubik text-lg py-4">
-          Desarrollador web Full-stack
+          Soy Desarrollador web Full-stack
         </p>
       </div>
 
       <div className="">
         <p className="text-[#F5F5F5] min-w-fit text-xl font-light font-raj w-[240px] font-rubik">
-          Enfocado en contribuir con métodos coherentes para lograr el valor
-          significativo bajo las circunstancias del momento. Leal, responsable y
-          comprometido con la integridad de cada iniciativa.
+          Orientado a generar resultados significativos mediante enfoques
+          coherentes, utilizando de manera eficiente los recursos disponibles y
+          adaptándome a las circunstancias del momento. Mi compromiso se refleja
+          en mi lealtad, responsabilidad y dedicación a preservar la integridad
+          de cada iniciativa.
         </p>
       </div>
 
