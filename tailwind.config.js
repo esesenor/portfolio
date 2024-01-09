@@ -1,5 +1,10 @@
+const aspectRatio = require("@tailwindcss/aspect-ratio");
+const lineClamp = require("@tailwindcss/line-clamp");
+const forms = require("@tailwindcss/forms");
+const typography = require("@tailwindcss/typography");
 const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -8,6 +13,10 @@ export default {
         rubik: ["Rubik", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
+        fadeAndSlideUp: {
+          "0%": { opacity: 0, transform: "translateY(4px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
         moveRight: {
           "0%": { transform: "translateX(0%)" },
           "50%": { transform: "translateX(50%)" },
@@ -79,6 +88,7 @@ export default {
         },
       },
       animation: {
+        fadeAndSlideUp: "fadeAndSlideUp 0.5s ease-out",
         moveRight: "moveRight 8s infinite linear",
         flotar: "flotar 8s infinite linear",
         rotarrr: "rotarrr 16s infinite linear",
@@ -90,5 +100,14 @@ export default {
       },
     },
   },
-  plugins: [],
+  variants: {},
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+  ],
+  corePlugins: {
+    // Otras configuraciones de Tailwind
+  },
 };
